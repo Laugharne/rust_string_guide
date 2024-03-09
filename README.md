@@ -1,6 +1,6 @@
 # Working with Strings in Rust: A Definitive Guide
   
-[Google Cache - Working with Strings in Rust: A Definitive Guide | by Luis Soares | Dev Genius](http://webcache.googleusercontent.com/search?q=cache:https://blog.devgenius.io/working-with-strings-in-rust-a-definitive-guide-b688931f295c&vwsrc=1)
+[Working with Strings in Rust: A Definitive Guide | by Luis Soares | Dev Genius](https://blog.devgenius.io/working-with-strings-in-rust-a-definitive-guide-b688931f295c)
 
 ![](image/2024-03-09-09-32-12.png)
 
