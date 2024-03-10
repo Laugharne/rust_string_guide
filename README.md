@@ -35,7 +35,12 @@
 
 <!-- /TOC -->
 
-[Working with Strings in Rust: A Definitive Guide | by Luis Soares | Dev Genius](https://blog.devgenius.io/working-with-strings-in-rust-a-definitive-guide-b688931f295c)
+--------
+
+[**Working with Strings in Rust: A Definitive Guide | by Luis Soares | Dev Genius**](https://blog.devgenius.io/working-with-strings-in-rust-a-definitive-guide-b688931f295c)
+
+--------
+
 
 ![](image/2024-03-09-09-32-12.png)
 
@@ -47,7 +52,9 @@ Rust offers two primary string types:
 
 ### 1. `String` Type
 
-- **Nature**: `String` in Rust represents a growable, heap-allocated string. It is analogous to `std::string` in C++ or `StringBuilder` in Java.
+- **Nature**: `String` in Rust represents a growable, heap-allocated string. It is analogous to :
+  - `std::string` in **C++**.
+  - Or `StringBuilder` in **Java**.
 - **Flexibility and Mutability**: Being dynamically allocated, `String` allows you to modify, append, and perform various operations on the content after its initial declaration.
 - **Ownership**: One of Rust’s core principles is its ownership system, which ensures memory safety without the need for a garbage collector. When a `String` is passed to a function or assigned to another variable, its ownership is transferred unless a reference or clone is used. This avoids dangling references and ensures clear memory management semantics.
 
