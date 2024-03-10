@@ -1,5 +1,40 @@
+
 # Working with Strings in Rust: A Definitive Guide
-  
+
+<!-- TOC -->
+
+- [Working with Strings in Rust: A Definitive Guide](#working-with-strings-in-rust-a-definitive-guide)
+	- [Two Types of Strings](#two-types-of-strings)
+		- [String Type](#string-type)
+		- [str Type](#str-type)
+	- [Working with Strings](#working-with-strings)
+		- [Creating Strings](#creating-strings)
+		- [Modifying Strings](#modifying-strings)
+		- [Accessing String Contents](#accessing-string-contents)
+		- [String Slicing](#string-slicing)
+		- [String Concatenation](#string-concatenation)
+			- [+ Operator:](#-operator)
+			- [format! Macro:](#format-macro)
+		- [Checking String Contents](#checking-string-contents)
+		- [Converting Between Strings and Other Types](#converting-between-strings-and-other-types)
+		- [Handling Errors](#handling-errors)
+		- [String Capacity and Length](#string-capacity-and-length)
+		- [String Trimming](#string-trimming)
+		- [Byte-wise Representation](#byte-wise-representation)
+		- [String Replacement](#string-replacement)
+	- [What about the char Type in Rust?](#what-about-the-char-type-in-rust)
+	- [Size and Representation](#size-and-representation)
+	- [Declaration and Initialization](#declaration-and-initialization)
+	- [Character Operations](#character-operations)
+		- [Escaping Characters](#escaping-characters)
+	- [Key Differences Summarized:](#key-differences-summarized)
+		- [Storage:](#storage)
+		- [Mutability:](#mutability)
+		- [Use Case:](#use-case)
+	- [Conclusion:](#conclusion)
+
+<!-- /TOC -->
+
 [Working with Strings in Rust: A Definitive Guide | by Luis Soares | Dev Genius](https://blog.devgenius.io/working-with-strings-in-rust-a-definitive-guide-b688931f295c)
 
 ![](image/2024-03-09-09-32-12.png)
@@ -33,7 +68,7 @@ println!("{}", dynamic_string);// Outputs: "Hello, Rust!"
 
 ```rust
 let static_str: &str = "Hello, Rust!";
-let part_of_string = &dynamic_string\[0..5\];// Slicing a String into a &str
+let part_of_string = &dynamic_string[0..5];// Slicing a String into a &str
 ```
 
 ## Working with Strings
@@ -75,7 +110,7 @@ To get a specific character by index, convert the string to a vector of characte
 
 ```rust
 let chars: Vec = "नमस्ते".chars().collect();
-println!("{}", chars\[0\]);// Outputs: "न"
+println!("{}", chars[0]);// Outputs: "न"
 ```
 
 ### String Slicing
@@ -84,7 +119,7 @@ You can obtain a substring using slicing.
 
 ```rust
 let phrase = "Rust is fun!";
-let part = &phrase\[0..4\];// "Rust"
+let part = &phrase[0..4];// "Rust"
 ```
 
 Ensure your slices are on valid UTF-8 boundaries, or you’ll get a panic.
